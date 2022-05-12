@@ -12,7 +12,8 @@ meetings <- webpage %>%
   xml2::xml_find_all("//div[contains(@class, 'u-linked-card')]") %>% 
   rvest::html_text()
 
-# separate the data into columns
+# separate the data into columns. 
+# The "blank" fields appear to contain the new line characters
 meetings_df <- meetings |>
   as_tibble() |> 
   separate(col = "value", 
@@ -21,7 +22,7 @@ meetings_df <- meetings |>
   select(-blank, -blank2, -blank3, -MeetingName_dupe) |> 
   mutate_all(trimws)
 
-# grab the hrefs. These didn't come with the original search, they're an attibute of the first meeting name?
+# grab the hrefs. These didn't come with the original search, they're an attribute of the first meeting name?
 # The hrefs seem to be relative to the website domain "www.mbta.com"
 link <- webpage %>% 
   rvest::html_nodes('body') %>% 
