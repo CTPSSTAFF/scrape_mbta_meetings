@@ -1,6 +1,6 @@
  #Load up our packages
-library(rvest)
 library(tidyverse)
+library(rvest)
 library(xml2)
 
 # Enter in the website
