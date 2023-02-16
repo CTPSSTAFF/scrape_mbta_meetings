@@ -3,8 +3,12 @@ library(tidyverse)
 library(rvest)
 library(xml2)
 
-# Enter in the website
+# Enter in the website and output name without .csv.
 webpage <- read_html("https://www.mbta.com/about/event-list?preview=&vid=latest&nid=5847")
+outname <- "triennial-audits_MBTA-events_Jan2020-May2022"
+
+# webpage <- read_html("https://www.mbta.com/about/fta-triennial-audit-mbta-events-may-dec-2022?preview=&vid=latest&nid=6332")
+# outname <- "triennial-audits_MBTA-events_May2022-Dec2022"
 
 # Find the list of meetings. They seem to be in the "u-linked-card" class.
 meetings <- webpage |> 
@@ -33,11 +37,11 @@ link <- webpage |>
 link_df <- link |> 
   as_tibble() |> 
   mutate(href_rel = value,
-         href_full = paste0("www.mbta.com", href_rel)) |> 
+         url = paste0("www.mbta.com", href_rel)) |> 
   select(-value, -href_rel)
 
 # bind the two datasets together
 scraped_site <- bind_cols(meetings_df, link_df)
 
 # export the data
-write_csv(scraped_site, "./triennial-audits_MBTA-events_Jan2020-May2022.csv")
+write_csv(scraped_site, paste0("./", outname, ".csv"))
