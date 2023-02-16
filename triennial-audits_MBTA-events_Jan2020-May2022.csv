@@ -1,4 +1,4 @@
-meeting_name,date_time,location,href_full
+meeting_name,date_time,location,url
 Finance and Audit Committee Meeting,"January 8, 2020, 10:30 AM","State Transportation Building, Boston, MA",www.mbta.com/events/2020-01-08/finance-and-audit-committee-meeting
 Fiscal and Management Control Board Meeting,"January 13, 2020, 12:00 PM","State Transportation Building, Boston, MA",www.mbta.com/events/2020-01-13/fiscal-and-management-control-board-meeting
 South Station Pre-Construction Open House,"January 22, 2020, 4:30 PM","BSA Space, Fort Point Room, 2nd Floor, Boston, MA",www.mbta.com/events/2020-01-22/south-station-pre-construction-open-house
@@ -247,7 +247,7 @@ Board Meeting | MBTA Audit and Finance Subcommittee (Virtual),"May 12, 2022, 8:3
 Public Meeting | Bus Network Redesign - Nubian Station Open House,"May 18, 2022, 2:00 PM","Nubian Station, Roxbury, MA",www.mbta.com/events/2022-05-18/public-meeting-bus-network-redesign-nubian-station-open-house
 Public Meeting | Green Line Train Protection and Track Upgrades (Virtual),"May 18, 2022, 6:00 PM","Virtual, Boston, MA",www.mbta.com/events/2022-05-18/public-meeting-green-line-train-protection-and-track-upgrades-virtual
 Public Meeting | Bus Network Redesign - Systemwide (Virtual),"May 19, 2022, 6:00 PM","Virtual, Boston, MA",www.mbta.com/events/2022-05-19/public-meeting-bus-network-redesign-systemwide-virtual
-Public Meeting | Bus Network Redesign - South Shore & South Suburbs (Virtual),"May 24, 2022, 6:00 PM","Virtual, Boston, MA",www.mbta.com/events/2022-05-24/public-meeting-bus-network-redesign-south-shore-south-suburbs-virtual
+Public Meeting | Bus Network Redesign - South Shore and South Suburbs (Virtual),"May 24, 2022, 6:00 PM","Virtual, Boston, MA",www.mbta.com/events/2022-05-24/public-meeting-bus-network-redesign-south-shore-and-south-suburbs-virtual
 Board Meeting | MBTA Board of Directors (Virtual),"May 26, 2022, 10:00 AM","Virtual, Boston, MA",www.mbta.com/events/2022-05-26/board-meeting-mbta-board-directors-virtual
 Public Meeting | Bus Network Redesign - Chelsea City Hall Station Open House,"May 26, 2022, 5:00 PM","Chelsea City Hall, Chelsea, MA",www.mbta.com/events/2022-05-26/public-meeting-bus-network-redesign-chelsea-city-hall-station-open-house
 Listening Session | Accessibility at the MBTA: The RIDE (Virtual),"May 26, 2022, 5:30 PM","Virtual, Boston, MA",www.mbta.com/events/2022-05-26/listening-session-accessibility-the-mbta-the-ride-virtual
